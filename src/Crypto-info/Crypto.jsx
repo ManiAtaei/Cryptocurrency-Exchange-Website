@@ -4,7 +4,7 @@ export default function Crypto() {
     return (
         <div dir='rtl' className='w-full flex flex-col items-center justify-between px-8 2xl:mt-[-50px] mt-20 mx-auto'>
             <div className='flex flex-col items-center justify-between lg:flex-row '>
-                <div className=' flex flex-col gap-8 lg:w-2/3 lg:px-[200px]'>
+                <div className=' flex flex-col gap-8 lg:w-2/3 2xl:px-[200px]'>
                     <div className='text-4xl font-bold text-green-700'>
                         تجارت ارزهای دیجیتال
                     </div>

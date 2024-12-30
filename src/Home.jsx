@@ -1,19 +1,19 @@
 import React from 'react'
-import Navbar from './Navbar/Navbar'
-import Header from './Header/Header'
+import Navbar from './navbar/Navbar'
+import Header from './header/Header'
 import Tags from './Tags/Tags'
 import Slid from './slider/Slid'
-import DataCart from './DataCart/DataCart'
-import Baner from './Baner/Baner'
-import BigCart from './Big-cart/BigCart'
-import DataWeb from './DataWeb/DataWeb'
-import Pov from './Keypoints/Pov'
-import Download from './Downloadapp/Download'
-import Mag from './Mag/Mag'
-import Crypto from './Crypto-info/Crypto'
-import Qs from './question/Qs'
-import Footer from './Footer/Footer'
-import CryptoTable from './Tb2/CryptoTable'
+import DataCart from './dataCart/DataCart'
+import Baner from './baner/Baner'
+import BigCart from './big-cart/BigCart'
+import DataWeb from './dataWeb/DataWeb'
+import Keypoints from './Keypoints/Keypoints'
+import Download from './downloadapp/Download'
+import Mag from './magzin/Magzin'
+import Crypto from './crypto-info/Crypto'
+import Question from './question/Qustion'
+import Footer from './footer/Footer'
+import Table from './table/Table'
 
 
 
@@ -27,13 +27,13 @@ export default function Home() {
       <Slid />
       <DataCart />
       <BigCart />
-      <CryptoTable/>
+      <Table/>
       <DataWeb />
-      <Pov />
+      <Keypoints />
       <Download />
       <Mag />      
       <Crypto />
-      <Qs />
+      <Question />
       <Baner />
       <Footer />
 

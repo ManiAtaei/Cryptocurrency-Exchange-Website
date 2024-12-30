@@ -1,64 +1,88 @@
-import React from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-const slides = [
-    {
-        src: "https://sarafi.io/_next/image?url=https%3A%2F%2Fcdn.sarafi.io%2Fbanners%2Faccountsecurity-srf.webp&w=640&q=75",
-        alt: "Account Security",
-    },
-    {
-        src: "https://sarafi.io/_next/image?url=https%3A%2F%2Fcdn.sarafi.io%2Fbanners%2Fhowtobuysell-srf.webp&w=640&q=75",
-        alt: "How to Buy and Sell",
-    },
-    {
-        src: "https://sarafi.io/_next/image?url=https%3A%2F%2Fcdn.sarafi.io%2Fbanners%2Finstagramlink-srf.webp&w=640&q=75",
-        alt: "Instagram Link",
-    },
-    {
-        src: "https://sarafi.io/_next/image?url=https%3A%2F%2Fcdn.sarafi.io%2Fbanners%2Faccountsecurity-srf.webp&w=640&q=75",
-        alt: "Account Security",
-    },
-    {
-        src: "https://sarafi.io/_next/image?url=https%3A%2F%2Fcdn.sarafi.io%2Fbanners%2Fhowtobuysell-srf.webp&w=640&q=75",
-        alt: "How to Buy and Sell",
-    },
-    {
-        src: "https://sarafi.io/_next/image?url=https%3A%2F%2Fcdn.sarafi.io%2Fbanners%2Finstagramlink-srf.webp&w=640&q=75",
-        alt: "Instagram Link",
-    },
-];
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
 
-export default function Slid() {
+import './styles.css';
+
+// import required modules
+import { Pagination } from 'swiper/modules';
+
+export default function App() {
     return (
-        <div className='w-full mx-auto mt-8 flex flex-col px-[200px]'>
-            {/* اسلایدر با اسکرول افقی */}
-            <div className='overflow-x-auto scrollbar-hide w-full'>
-                <div className='flex gap-4 px-4 whitespace-nowrap'>
-                    {slides.map((slide, index) => (
-                        <div
-                            key={index}
-                            className='min-w-[476px] h-[180px] rounded-[8px] bg-gray-100 flex-shrink-0'
-                        >
-                            <img
-                                className='w-full h-full rounded-[8px] object-cover'
-                                src={slide.src}
-                                alt={slide.alt}
-                            />
-                        </div>
-                    ))}
-                </div>
-            </div>
+        <>
+            <div className='mt-9 2xl:px-[30px]'>
+                <Swiper
+                    slidesPerView={3}
+                    pagination={{
+                        clickable: true,
+                    }}
+                    loop={true}
+                    modules={[Pagination]}
+                    className="mySwiper"
+                    breakpoints={{
+                        252: { slidesPerView: 1 },
+                        417: {
+                            slidesPerView: 1.3,
+                        },
+                        480: {
+                            slidesPerView: 1.5,
+                            spaceBetween: 10,
+                        },
 
-            {/* نشانگرها */}
-            <div className='flex gap-3 cursor-pointer mt-4 mx-auto pb-8'>
-                {slides.map((_, index) => (
-                    <span
-                        key={index}
-                        className={`w-[15px] h-[5px] rounded-xl ${
-                            index === 0 ? "bg-[#059669]" : "bg-[#CCCCCC]"
-                        }`}
-                    />
-                ))}
+                        610: {
+                            slidesPerView: 2,
+                            spaceBetween: 10,
+                        },
+
+                        622: {
+                            slidesPerView: 2,
+                        },
+
+                        640: {
+                            slidesPerView: 2,
+                            spaceBetween: 30,
+                        },
+                        1000: {
+                            slidesPerView: 3,
+                            spaceBetween: 30,
+                        },
+                        768: {
+                            slidesPerView: 2.5,
+                            spaceBetween: 16,
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                            spaceBetween: 20,
+                        },
+                        1441: {
+                            slidesPerView: 3,
+                            spaceBetween: 24,
+                        },
+                    }}
+                >
+                    <div className="flex rounded-xl flex-row-reverse justify-center sm:gap-7 p-2 2xl:h-[216.719px] 2xl:w-[1536px] 2xl:gap-[31px]">
+
+                        <SwiperSlide><img className=" rounded-xl" src="https://sarafi.io/_next/image?url=https%3A%2F%2Fcdn.sarafi.io%2Fbanners%2Finstagramlink-srf.webp&w=640&q=75" alt="img  " /></SwiperSlide>
+
+                        <SwiperSlide><img className=" rounded-xl" src="https://sarafi.io/_next/image?url=https%3A%2F%2Fcdn.sarafi.io%2Fbanners%2Fhowtobuysell-srf.webp&w=640&q=75" alt="img  " /></SwiperSlide>
+
+
+                        <SwiperSlide><img className=" rounded-xl" src="https://sarafi.io/_next/image?url=https%3A%2F%2Fcdn.sarafi.io%2Fbanners%2Faccountsecurity-srf.webp&w=640&q=75" alt="img  " /></SwiperSlide>
+
+
+                        <SwiperSlide><img className=" rounded-xl" src="https://sarafi.io/_next/image?url=https%3A%2F%2Fcdn.sarafi.io%2Fbanners%2Fhowtoregister-srf.webp&w=640&q=75" alt="img  " /></SwiperSlide>
+
+                        <SwiperSlide><img className=" rounded-xl" src="https://sarafi.io/_next/image?url=https%3A%2F%2Fcdn.sarafi.io%2Fbanners%2Ftelegramlink-srf.webp&w=640&q=75" alt="img  " /></SwiperSlide>
+
+
+
+
+                    </div>
+                </Swiper>
             </div>
-        </div>
+        </>
     );
 }

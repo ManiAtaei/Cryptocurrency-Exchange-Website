@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function Pov() {
+export default function Keypoints() {
     return (
-        <div className="2xl:h-[797px]">
+        <div className="2xl:h-[797px] ">
                 <div className="2xl:w-[1536px] flex flex-col 2xl:items-center 2xl:mx-auto">
                     <div className=" flex flex-col justify-center items-center mt-8 sm:mt-12 lg:mt-[64px]">
                         <div className="px-2">

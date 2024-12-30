@@ -1,0 +1,52 @@
+#app {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+
+
+.swiper {
+  width: 81%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.swiper-pagination {
+  position:static;
+  top: 10px;
+}
+  
+  .swiper-pagination-bullet {
+    width: 16px;
+    height:5px;
+    background: #c9c7c7; 
+    opacity: 0.8;
+    border-radius: 25%;
+    margin: 0 5px; 
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: #056e24;
+  }

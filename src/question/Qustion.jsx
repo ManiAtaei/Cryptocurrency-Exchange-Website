@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Qs() {
+export default function Qustion() {
 
 
   
@@ -8,7 +8,7 @@ export default function Qs() {
         
 
     return (
-        <div dir='rtl' className='w-full mx-auto flex items-center justify-between gap-20 mt-40 flex-col md:flex-row xl:px-[200px]'>
+        <div dir='rtl' className='w-full mx-auto flex items-center justify-between gap-20 mt-40 flex-col md:flex-row xl:px-[220px]'>
             <div className='w-full flex flex-col gap-4 px-4 '>
                 <h1 className='text-2xl font-bold text-black lg:text-4xl xl:'>
                     سوالات متداول
